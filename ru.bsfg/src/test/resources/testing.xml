@@ -3,7 +3,8 @@
 <suite name="tests">
     <test name="frontend">
         <classes>
-
+            <class name="ru.bsfg.BaseTest"></class>
+            <class name="ru.bsfg.ExampleTest"></class>
         </classes>
     </test>
 </suite>

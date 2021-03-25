@@ -8,13 +8,11 @@ public class ExampleTest extends BaseTest {
 
     @Test
     public void menuIsVisible() {
-        Pages.MAIN.open();
         Pages.MAIN.getMainMenu().shouldBe(Condition.visible);
     }
 
     @Test
     public void subMenuIsVisible() {
-        Pages.MAIN.open();
         Pages.MAIN.getSubMenu().shouldBe(Condition.visible);
     }
 }
