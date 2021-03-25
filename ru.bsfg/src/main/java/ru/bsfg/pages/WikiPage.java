@@ -1,25 +1,8 @@
 package ru.bsfg.pages;
 
-import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.SelenideElement;
-import ru.bsfg.app.Trim;
-
-import static com.codeborne.selenide.Selenide.$x;
-
 public class WikiPage extends Page {
 
     protected final String baseUrl = "https://db.bsfg.ru/";
-
-    public WikiPage(String pageUrl) {
-        super(pageUrl);
-    }
-
-    @Override
-    public void open() {
-        String url = Trim.right(baseUrl) + "/" + Trim.left(pageUrl);
-        Selenide.open(url);
-    }
 
     /*
     private final SelenideElement menuLine = $x("//ul[@class='lbl_ul']");

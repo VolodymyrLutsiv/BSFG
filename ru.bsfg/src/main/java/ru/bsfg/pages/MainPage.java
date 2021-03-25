@@ -6,10 +6,6 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class MainPage extends Page {
 
-    public MainPage(String pageUrl) {
-        super(pageUrl);
-    }
-
     /** JUST FOR EXAMPLE_TEST */
     private final SelenideElement mainMenu= $("ul.header__left");
     private final SelenideElement subMenu= $("div.secondary ul");

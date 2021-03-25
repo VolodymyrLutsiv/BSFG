@@ -9,22 +9,22 @@ import ru.bsfg.pages.wikipages.MapPage;
 public class PageBuilder {
 
     public static MainPage buildMainPage() {
-        return new MainPage("/");
+        return new MainPage();
     }
 
     public static UserAccountPage buildUserAccountPage() {
-        return new UserAccountPage("/");
+        return new UserAccountPage();
     }
 
     public static ShopPage buildShopPage() {
-        return new ShopPage("/?act=donation");
+        return new ShopPage();
     }
 
     public static WikiPage buildWikiPage() {
-        return new WikiPage("");
+        return new WikiPage();
     }
 
     public static MapPage buildMapPage() {
-        return new MapPage("/map");
+        return new MapPage();
     }
 }

@@ -1,5 +1,6 @@
 package ru.bsfg;
 
+import com.codeborne.selenide.Selenide;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -12,13 +13,8 @@ public class BaseTest {
         Driver.init();
     }
 
-    @AfterMethod
-    public void clearCookies() {
-        Driver.clearCookies();
-    }
-
     @AfterSuite(alwaysRun = true)
     public void tearDown() {
-        Driver.close();
+        Selenide.closeWebDriver();
     }
 }

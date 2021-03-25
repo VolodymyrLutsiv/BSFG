@@ -32,8 +32,4 @@ public class Driver {
         Selenide.clearBrowserCookies();
         Selenide.clearBrowserLocalStorage();
     }
-
-    public static void close() {
-        Selenide.closeWebDriver();
-    }
 }
