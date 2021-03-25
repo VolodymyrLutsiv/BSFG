@@ -1,10 +1,10 @@
 package ru.bsfg.pages;
 
-import com.codeborne.selenide.SelenideElement;
+public class WikiPage extends Page {
 
-import static com.codeborne.selenide.Selenide.$x;
+    protected final String baseUrl = "https://db.bsfg.ru/";
 
-public class WikiPage {
+    /*
     private final SelenideElement menuLine = $x("//ul[@class='lbl_ul']");
     private final SelenideElement backToWikiButton = $x("//ul[@class='ul__left']//a[contains(.,'Главная')]");
     private final SelenideElement profListButton = $x("//ul[@class='lbl_ul']//a[contains(.,'Профессии')]");
@@ -35,4 +35,5 @@ public class WikiPage {
         backToWikiButton.click();
         return new WikiPage();
     }
+     */
 }

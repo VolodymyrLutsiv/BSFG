@@ -1,4 +1,6 @@
 package ru.bsfg.pages;
 
-public class UserAccountPage {
+public class UserAccountPage extends Page {
+
+
 }

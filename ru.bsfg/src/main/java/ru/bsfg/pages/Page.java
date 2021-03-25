@@ -1,4 +1,5 @@
 package ru.bsfg.pages;
 
-public class Page {
+public abstract class Page {
+
 }
