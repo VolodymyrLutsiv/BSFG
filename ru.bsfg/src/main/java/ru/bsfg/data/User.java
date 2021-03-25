@@ -12,7 +12,7 @@ public enum User {
         this.password = password;
     }
 
-    public String getUsername() {
+    public String getUsernName() {
         return username;
     }
 

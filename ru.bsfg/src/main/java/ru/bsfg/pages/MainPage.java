@@ -14,7 +14,7 @@ public class MainPage {
 
     public UserAccountPage loginIntoUserAccount(User user){
         userAccountButton.click();
-        $x("//input[@name='username']").setValue(user.getUsername());
+        $x("//input[@name='username']").setValue(user.getUsernName());
         $x("//input[@name='password']").setValue(user.getPassword());
         $x("//button[@type='submit']").click();
         return new UserAccountPage();
